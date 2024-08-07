@@ -16,7 +16,7 @@ jobs:
       - name: Install and run Ruff
         run: |
           pip install --user ruff
-          ruff check --format=github --ignore=F401 --target-version=py38 .
+          ruff check -- --format=github --ignore=F401 --target-version=py38 .
 
   build-and-test:
     strategy:
